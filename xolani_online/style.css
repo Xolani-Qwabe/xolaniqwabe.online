@@ -1,0 +1,281 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+/*Font Sizes*/
+--logo-font-size:3em;
+  /* CSS HEX */
+--battleship-gray: #867A6Eff;
+--raisin-black: #15111Fff;
+--khaki: #BEA68Bff;
+--redwood: #A75247ff;
+--chamoisee: #AF8366ff;
+--lion: #C29D7Aff;
+--bone: #E0D2BEff;
+--black: #000000ff;
+
+/* CSS HSL */
+--battleship-gray: hsla(30, 10%, 48%, 1);
+--raisin-black: hsla(257, 29%, 9%, 1);
+--khaki: hsla(32, 28%, 65%, 1);
+--redwood: hsla(7, 40%, 47%, 1);
+--chamoisee: hsla(24, 31%, 54%, 1);
+--lion: hsla(29, 37%, 62%, 1);
+--bone: hsla(35, 35%, 81%, 1);
+--black: hsla(0, 0%, 0%, 1);
+
+
+
+
+/* SCSS Gradient */
+--gradient-top: linear-gradient(0deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-right: linear-gradient(90deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-bottom: linear-gradient(180deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-left: linear-gradient(270deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-top-right: linear-gradient(45deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-bottom-right: linear-gradient(135deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-top-left: linear-gradient(225deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-bottom-left: linear-gradient(315deg, #867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+--gradient-radial: radial-gradient(#867A6Eff, #15111Fff, #BEA68Bff, #A75247ff, #AF8366ff, #C29D7Aff, #E0D2BEff, #000000ff);
+}
+
+/*Font Faces*/
+@font-face {
+  font-family: 'MonsergaRegular';
+  src: url('public/fonts/Monserga-regular-FFP.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MutantAcademy';
+  src: url('public/fonts/MutantAcademyBB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SnackerComic';
+  src: url('public/fonts/SnackerComic_PerosnalUseOnly.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vacaciones';
+  src: url('public/fonts/Vacaciones-font-ffp-defharo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Applying Vacaciones font */
+.vacaciones {
+  font-family: 'Vacaciones', serif;
+  font-size: var(--logo-font-size);
+}
+
+/* Applying snackerComic font */
+.snackerComic {
+  font-family: 'SnackerComic', sans-serif;
+  font-size: var(--logo-font-size);
+}
+
+/* Applying Mutant Academy font */
+.mutant-font {
+  font-family: 'MutantAcademy', sans-serif;
+  font-size: var(--logo-font-size);
+}
+
+/* Applying Mutant Academy font */
+.monsergaRegular {
+  font-family: 'MonsergaRegular', sans-serif;
+  font-size: var(--logo-font-size);
+}
+
+
+
+/*Font classes*/
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  /* font-size: var(--logo-font-size); */
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--logo-font-size);
+}
+
+
+
+/*App styles*/
+#app{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--battleship-gray);
+}
+
+/*Navbar Styles*/
+.navbar{
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: solid black 1px;
+  justify-content: space-between;
+}
+
+
+/*Logo Box*/
+.logo-box{
+  display: flex;
+  min-width: 10vw;
+  align-items: center;
+  gap: 10px;
+  margin-left: 1em;
+  /* justify-content: space-around; */
+  /* border: dashed black 1px; */
+}
+
+/*Menu Box*/
+.menu-box{
+  display: flex;
+  min-width: 10vw;
+  align-items: center;
+  justify-content: space-around;
+  /* border: dashed black; */
+}
+
+/*Menu Styles*/
+.menu {
+  position: relative;
+  width: 30px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  cursor: pointer;
+}
+
+.menu::before,
+.menu::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the lines */
+  background-color: black; /* Color of the lines */
+}
+
+.menu::before {
+  top: 4px; /* First line at the top */
+}
+
+.menu::after {
+  bottom: 4px; /* Second line at the bottom */
+}
+
+
+/*Contact Button*/
+.contact-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid black; /* Solid black border */
+  color: black; /* Black text */
+  padding: 10px 20px; /* Adjust padding for size */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 5px; /* Optional rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for hover effects */
+}
+
+.contact-button:hover {
+  background-color: black; /* Black background on hover */
+  color: white; /* White text on hover */
+}
+
+
+/*Vertical line styles*/
+.vertical-line {
+  width: .1vw;             /* Line thickness */
+  height: 4vh;          /* Line height */
+  background-color: black; /* Line color */
+
+}
+
+
+/*Hero Content*/
+.hero-content{
+  /* background-color: var(--battleship-gray); */
+  min-height: 90vh;
+  min-width: 100vw;
+
+}
+
+.part-one{
+  min-height: 50vh;
+  min-width: 90vw;
+  display: flex;
+  gap: 50vw;
+}
+
+.hero-text-box{
+  max-height: 100%;
+  max-width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+.hero-img-box{
+  max-height: 100%;
+  max-width: 50%;
+  border: dotted 1px;
+}
+
+.my-img {
+  width: 70%; /* Set width to fill the container */
+  height: auto; /* Maintain aspect ratio */
+
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+
+.part-two{
+  min-height: 40vh;
+  min-width: 100vw;
+  border: dotted 1px;
+}
